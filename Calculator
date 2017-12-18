@@ -1,0 +1,51 @@
+#A basic calculator written by Weronika Wolska
+
+
+#Function that performs addition
+def add(num1, num2):
+	return num1 + num2
+	
+#Function that performs subtraction
+def subtract(num1, num2):
+	return num1 - num2
+	
+#Function that performs division
+def divide(num1, num2):
+	return num1/num2
+	
+#Function that performs multiplication
+def multiply(num1, num2):
+	return num1*num2
+
+def main():
+	
+	#Find what operation the user wants to perform
+	operation=input("Choose operation (plus, minus, multiply, divide): ")
+	
+	#Incorrect operation
+	if(operation != 'plus' and operation != 'minus' and operation != 'multiply' and operation != 'divide'):
+		print("Oops! Invalid operation.")
+		
+	else:
+		#Take input from user (two numbers)
+		first = int(input("Enter the first number: "))
+		
+		second = int(input("Enter the second number: "))
+		
+		#If the user wants to add, use the add function
+		if operation == 'plus':
+			print(add(first, second))
+			
+		#If the user wants to subtract, use the subtract function
+		elif operation == 'minus':
+			print(subtract(first, second))
+			
+		#If the user wants to multiply, use the multiply function
+		elif operation == 'multiply':
+			print(multiply(first, second))
+			
+		#If the user wants to divide, use the divide function
+		elif operation == 'divide':
+			print(divide(first, second))
+			
+main()
