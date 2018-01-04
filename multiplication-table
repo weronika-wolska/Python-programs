@@ -1,0 +1,6 @@
+#A program written by Weronika Wolska to input a number from the user and display the multiplication table of this number
+
+num = int(input("Enter number: "))
+
+for i in range(1,13):
+    print(num, "x", i, "=", num*i)
