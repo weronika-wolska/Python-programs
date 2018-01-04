@@ -1,0 +1,17 @@
+#A program written by Weronika Wolska that generates a random number between 1 and 10 and asks the user to guess the number
+
+import random
+answer = random.randint(1,10)
+chances = 3
+
+while chances != 0:
+    guess = int(input("Enter your guess: "))
+    if guess is answer:
+        print ("Congratulations! You guessed the number!")
+        break
+    else:
+        chances = chances -1
+        print ("Oops! You guessed incorrect. You have", chances, "chances left")
+
+if chances is 0:
+    print ("Sorry, you lost the game! The correct number was", answer)
