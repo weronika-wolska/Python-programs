@@ -1,0 +1,19 @@
+#A program written by Weronika Wolska to calculate the fibonacci series
+
+first = 0
+second = 1
+i = 3
+num = int(input("How many values of the fiboncci series would you like to display?"))
+
+if (num>=1):
+	print(first)
+	
+if (num>=2):
+	print(second)
+
+while i <= num:
+	next = first + second
+	print(next)
+	first = second
+	second = next
+	i = i + 1
